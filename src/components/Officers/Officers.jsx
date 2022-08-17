@@ -55,7 +55,7 @@ export const Officers = () => {
       approved: false,
     };
     axios
-      .post('https://final-project-sf.herokuapp.com/api/officers', data, {
+      .post('https://sf-final-project.herokuapp.com/api/officers', data, {
         headers: {
           Authorization: 'Bearer ' + localStorage.getItem('token'),
         },

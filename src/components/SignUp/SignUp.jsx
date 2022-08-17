@@ -53,7 +53,7 @@ export const SignUp = () => {
     };
 
     axios
-      .post('https://final-project-sf.herokuapp.com/api/auth/sign_up', data, headers)
+      .post('https://sf-final-project.herokuapp.com/api/auth/sign_up', data, headers)
       .then((res) => {
         setData(res.data);
         setEmail('');

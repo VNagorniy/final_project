@@ -18,7 +18,7 @@ export const OfficersList = () => {
       person.approved = true;
       axios
         .put(
-          `https://final-project-sf.herokuapp.com/api/officers/${person._id}`,
+          `https://sf-final-project.herokuapp.com/api/officers/${person._id}`,
           { approved: true },
           {
             headers: {
@@ -37,7 +37,7 @@ export const OfficersList = () => {
     const person = personsInfo[itemIdx];
 
     axios
-      .delete(`https://final-project-sf.herokuapp.com/api/officers/${person._id}`, {
+      .delete(`https://sf-final-project.herokuapp.com/api/officers/${person._id}`, {
         headers: {
           Authorization: 'Bearer ' + localStorage.getItem('token'),
         },

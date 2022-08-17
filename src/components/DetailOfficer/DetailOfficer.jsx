@@ -50,7 +50,7 @@ export const DetailOfficer = (props) => {
     };
 
     axios
-      .put(`https://final-project-sf.herokuapp.com/api/officers/${person._id}`, data, {
+      .put(`https://sf-final-project.herokuapp.com/api/officers/${person._id}`, data, {
         headers: {
           Authorization: 'Bearer ' + localStorage.getItem('token'),
         },

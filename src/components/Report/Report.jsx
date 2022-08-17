@@ -66,7 +66,7 @@ export const Report = () => {
     const data = { licenseNumber, date, color, type, ownerFullName, officer, description, clientId: 'd983e42e-bb6a-4eb2-8eb2-d86cd73cd737' };
 
     axios
-      .post('https://final-project-sf.herokuapp.com/api/public/report', data)
+      .post('https://sf-final-project.herokuapp.com/api/public/report', data)
       .then((res) => {
         setCases(res.data);
         setLicenseNumber('');
@@ -100,7 +100,7 @@ export const Report = () => {
     const data = { licenseNumber, date, color, type, ownerFullName, officer, description };
 
     axios
-      .post('https://final-project-sf.herokuapp.com/api/cases/', data, {
+      .post('https://sf-final-project.herokuapp.com/api/cases/', data, {
         headers: {
           Authorization: 'Bearer ' + localStorage.getItem('token'),
         },

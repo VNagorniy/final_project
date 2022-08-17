@@ -42,7 +42,7 @@ export const Detail = (props) => {
     };
 
     axios
-      .put(`https://final-project-sf.herokuapp.com/api/cases/${cases._id}`, data, {
+      .put(`https://sf-final-project.herokuapp.com/api/cases/${cases._id}`, data, {
         headers: {
           Authorization: 'Bearer ' + localStorage.getItem('token'),
         },

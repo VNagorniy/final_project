@@ -18,7 +18,7 @@ export const Bikes = () => {
     setLoading(true);
 
     axios
-      .delete(`https://final-project-sf.herokuapp.com/api/cases/${item._id}`, {
+      .delete(`https://sf-final-project.herokuapp.com/api/cases/${item._id}`, {
         headers: {
           Authorization: 'Bearer ' + localStorage.getItem('token'),
         },
@@ -51,7 +51,7 @@ export const Bikes = () => {
     item.status = itemStatus;
 
     axios
-      .put(`https://final-project-sf.herokuapp.com/api/cases/${item._id}`, item, {
+      .put(`https://sf-final-project.herokuapp.com/api/cases/${item._id}`, item, {
         headers: {
           Authorization: 'Bearer ' + localStorage.getItem('token'),
         },
@@ -62,7 +62,7 @@ export const Bikes = () => {
   const loadingOfData = async () => {
     setLoading(true);
 
-    const res = await axios.get('https://final-project-sf.herokuapp.com/api/cases', {
+    const res = await axios.get('https://sf-final-project.herokuapp.com/api/cases', {
       headers: {
         Authorization: 'Bearer ' + localStorage.getItem('token'),
       },

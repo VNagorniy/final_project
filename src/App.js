@@ -38,7 +38,7 @@ const App = () => {
     };
 
     axios
-      .post('https://final-project-sf.herokuapp.com/api/auth/sign_in', data, { headers })
+      .post('https://sf-final-project.herokuapp.com/api/auth/sign_in', data, { headers })
       .then((res) => {
         setData(res.data);
         setEmail('');
@@ -55,7 +55,7 @@ const App = () => {
   };
 
   const loadingOfPersons = async () => {
-    const res = await axios.get('https://final-project-sf.herokuapp.com/api/officers', {
+    const res = await axios.get('https://sf-final-project.herokuapp.com/api/officers', {
       headers: {
         Authorization: 'Bearer ' + localStorage.getItem('token'),
       },
@@ -68,7 +68,7 @@ const App = () => {
   }, [personsInfo]);
 
   const loadingOfСases = async () => {
-    const res = await axios.get('https://final-project-sf.herokuapp.com/api/cases', {
+    const res = await axios.get('https://sf-final-project.herokuapp.com/api/cases', {
       headers: {
         Authorization: 'Bearer ' + localStorage.getItem('token'),
       },

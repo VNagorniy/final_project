@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/static/css/main.1b44d80d.css",
+    "main.js": "/static/js/main.6019115a.js",
+    "static/media/bike3.png": "/static/media/bike3.b2b097322169350ddef7.png",
+    "static/media/bike2.png": "/static/media/bike2.16814a59f2adef5c8f8a.png",
+    "static/media/message.jpg": "/static/media/message.704b791761882bd3a2a1.jpg",
+    "static/media/bike1.png": "/static/media/bike1.71ba261423228ce58dae.png",
+    "static/media/bike4.png": "/static/media/bike4.d0d027d38440f2930943.png",
+    "index.html": "/index.html",
+    "main.1b44d80d.css.map": "/static/css/main.1b44d80d.css.map",
+    "main.6019115a.js.map": "/static/js/main.6019115a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1b44d80d.css",
+    "static/js/main.6019115a.js"
+  ]
+}
